@@ -17,7 +17,16 @@ import { Component, Vue } from 'vue-property-decorator';
 import marked from 'marked';
 import defaultMarkdown from './placeholderMarkdown';
 
+const myRenderer = new marked.Renderer();
+const oldLinkMethod = myRenderer.link;
+myRenderer.link = (href: string, title: string, text: string): string => {
+  const linkWOTargetAttr = oldLinkMethod.call(myRenderer, href, title, text);
+  const wOlastPart = linkWOTargetAttr.slice(2);
+  const withFirstPart = '<a target="_blank"';
+  return withFirstPart + wOlastPart;
+};
 marked.setOptions({
+  renderer: myRenderer,
   gfm: true,
   silent: true,
   breaks: true,
