@@ -57,6 +57,9 @@ body {
   }
   > #preview {
     padding: 10px;
+    h1, h2 {
+      border-bottom: 1px solid #eee;
+    }
     pre, :not(pre) > code {
       background-color: #eee;
       border-radius: 5px;
