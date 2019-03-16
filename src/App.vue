@@ -55,5 +55,34 @@ body {
     width: 50%;
     flex-shrink: 0;
   }
+  > #preview {
+    padding: 10px;
+    pre, :not(pre) > code {
+      background-color: #eee;
+      border-radius: 5px;
+      padding: 3px 5px;
+    }
+    blockquote {
+      margin-left: 0px;
+      padding-left: 40px;
+      border-left: 5px solid #ddd;
+    }
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      tr {
+        td, th {
+          border: 1px solid #ddd;
+          padding: 5px 10px;
+        }
+        th {
+          font-weight: bold;
+        }
+        &:nth-child(2) {
+          background-color: #eee;
+        }
+      }
+    }
+  }
 }
 </style>
