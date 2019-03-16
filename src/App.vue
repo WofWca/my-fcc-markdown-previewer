@@ -48,6 +48,7 @@ body {
   height: 100vh;
   > #editor, #preview {
     overflow-y: scroll;
+    text-align: initial;
   }
   > #editor {
     resize: horizontal;
