@@ -40,8 +40,8 @@ And here. | Okay. | I think we get it.
 1. And there are numbererd lists too.
 1. Use just 1s if you want!
 1. But the list goes on...
-- Even if you use dashes or asterisks.
-* And last but not least, let's not forget embedded images:
+
+And last but not least, let's not forget embedded images:
 
 ![Vue Logo w/ Text](https://vuejs.org/images/logo.png)
 `;
