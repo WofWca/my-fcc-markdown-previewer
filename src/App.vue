@@ -20,6 +20,7 @@ import defaultMarkdown from './placeholderMarkdown';
 marked.setOptions({
   gfm: true,
   silent: true,
+  breaks: true,
 });
 
 @Component
