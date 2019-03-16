@@ -44,5 +44,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  display: flex;
+  height: 100vh;
+  > #editor, #preview {
+    overflow-y: scroll;
+  }
+  > #editor {
+    resize: horizontal;
+    width: 50%;
+    flex-shrink: 0;
+  }
 }
 </style>
