@@ -57,6 +57,7 @@ body {
     flex-shrink: 0;
   }
   > #preview {
+    flex-basis: 100%;
     padding: 10px;
     h1, h2 {
       border-bottom: 1px solid #eee;
