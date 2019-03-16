@@ -1,14 +1,26 @@
 <template>
   <div id="app">
-
+    <textarea
+      id="editor"
+      v-model="markdown"
+    >
+      Some default text
+    </textarea>
+    <section id="preview">
+      {{ markup }}
+    </section>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import defaultMarkdown from './placeholderMarkdown';
 
 @Component
-export default class App extends Vue {}
+export default class App extends Vue {
+  private markdown: string = defaultMarkdown;
+  private markup!: string;
+}
 </script>
 
 <style lang="scss">
